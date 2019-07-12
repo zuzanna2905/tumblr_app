@@ -1,1 +1,12 @@
-<h1>This is the index page</h1>
+<h1 class='title'>All Posts</h1>
+<div class='list'>
+  <% @posts.each do |post| %>
+    <div class='post'>
+      <%= link_to post_path(post) do %>
+        <h3><%= post.title %></h3>
+        <p><%= truncate(post.body, length: 30)%></p>
+        <small>Submitted: <%= time_ago_in_words(post.created_at) %> ago</small>
+      <% end %>  
+    </div>
+  <% end %>
+</div>

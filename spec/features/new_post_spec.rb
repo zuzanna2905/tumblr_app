@@ -13,5 +13,6 @@ RSpec.feature "New Post Creating", type: :feature do
     end
     expect(page).to have_content(post.title)
     expect(page).to have_content(post.body)
+    expect(page).to have_content(post.created_at)
   end
 end
