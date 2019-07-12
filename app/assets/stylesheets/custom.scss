@@ -3,3 +3,19 @@ $terra_cotta: #ED6A5A;
 $orange_yellow:#F3C969;
 $cambridge_blue:#9BC1BC;
 $grey:#2D2D2A;
+
+
+.button {
+	outline: none;
+	background: transparent;
+	border: 1.5px solid #FFF;
+	padding: .5em 2.5em;
+	border-radius: 0.5em;
+	&:hover {
+		border: 1px solid #333734;
+		color: $cambridge_blue;
+		a {
+			color: black !important;
+		}
+	}
+}

@@ -9,7 +9,6 @@
 	background: $orange_yellow;
 	padding: 7em 0 0 0;
 	border-right: 1px solid $blond;
-
 	ul {
 		list-style: none;
 		text-align: right;
@@ -43,20 +42,5 @@
 		top: 39%;
 		font-size: 1.0em;
 		color: #FFFFFF;
-	}
-}
-
-.button {
-	outline: none;
-	background: transparent;
-	border: 1.5px solid #FFF;
-	padding: .5em 2.5em;
-	border-radius: 0.5em;
-	&:hover {
-		border: 1px solid #333734;
-		color: $cambridge_blue;
-		a {
-			color: $cambridge_blue !important;
-		}
 	}
 }

@@ -1,0 +1,16 @@
+<%= form_for @post do |f| %>
+  <p>
+    <%= f.label :title, 'Title (5-20 characters)' %>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :body, 'Content (min 10 characters)' %>
+    <%= f.text_area :body %>
+  </p>
+
+  <p>
+    <%= f.submit id: 'post_submit' %>
+  </p>
+
+<%end%>

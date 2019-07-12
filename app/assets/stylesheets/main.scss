@@ -66,6 +66,13 @@
 			color: #9eafba;
 			margin: .5em 0 2em 0;
 		}
+		a {
+			color: black;
+			text-decoration: none;
+			&:hover {
+				color: grey;
+			}
+		}
 		#comments {
 			h2 {
 				margin: 3em 0 1em 0;
@@ -163,7 +170,6 @@
 		margin-left: .5em;
 		&:hover {
 			border: 1px solid #33acb7;
-			color: #33acb7;
 		}
 	}
 }
