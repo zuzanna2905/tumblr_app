@@ -4,12 +4,24 @@
     <title>TumblrApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', "https://fonts.googleapis.com/css?family=Tangerine" %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div id='sidebar'>
+      <%= render 'layouts/nav'%>
+    </div>
+    <div id='main_content'>
+      <div id='header'>
+        <p>Post Feed</p>
+        <div class='buttons'>
+          <button class='button'><%= link_to 'Add Post', new_post_path %></button>
+          <button class='button'>Log out</button>
+        </div>
+      </div>
+      <%= yield %>
+    </div>
   </body>
 </html>
