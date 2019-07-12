@@ -1,14 +1,16 @@
+<%= render 'shared/errors', obj: @post %>
+
 <div id='page_wrapper'>
   <h1>Write new post</h1>
 
-  <%= form_for :post, url: posts_path do |f| %>
+  <%= form_for @post do |f| %>
     <p>
-      <%= f.label :title %>
+      <%= f.label :title, 'Title (5-20 characters)' %>
       <%= f.text_field :title %>
     </p>
 
     <p>
-      <%= f.label :body %>
+      <%= f.label :body, 'Content (min 10 characters)' %>
       <%= f.text_area :body %>
     </p>
 

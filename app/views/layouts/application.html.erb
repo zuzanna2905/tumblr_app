@@ -21,6 +21,9 @@
           <button class='button'>Log out</button>
         </div>
       </div>
+      <% flash.each do |key, value| %>
+        <%= content_tag :div, value, class: "flash #{key}" %>
+      <% end %>
       <%= yield %>
     </div>
   </body>
