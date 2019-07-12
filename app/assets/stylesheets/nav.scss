@@ -9,6 +9,7 @@
 	background: $orange_yellow;
 	padding: 7em 0 0 0;
 	border-right: 1px solid $blond;
+	font-weight: bold;
 	ul {
 		list-style: none;
 		text-align: right;
@@ -41,6 +42,12 @@
 		right: 3.1em;
 		top: 39%;
 		font-size: 1.0em;
-		color: #FFFFFF;
+		a {
+			color: #FFFFFF;
+			text-decoration: none;
+			&:hover {
+				color: $cambridge_blue;
+			}
+		}
 	}
 }
